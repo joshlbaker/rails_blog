@@ -1,4 +1,4 @@
-<h2>Weekend Blog Project<h2>
+<strong>Weekend Blog Project</strong>
 
 <strong>1)</strong> I started out by making a new rails project in my dev folder
 [rails new -d postgresql rails_blog]

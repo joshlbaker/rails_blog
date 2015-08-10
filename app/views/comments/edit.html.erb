@@ -1,0 +1,7 @@
+<h1>Edit Comment</h1>
+<%= form_for @comment do |f| %>
+<%= f.text_field :topic, placeholder: "Topic" %><br>
+<%= f.text_field :body, placeholder: "Comment" %><br>
+<hr>
+<%= f.submit "Save changes" %>
+<% end %>

@@ -1,0 +1,15 @@
+<h1>Profile</h1>
+<div>
+	<p><%= current_user.first_name %></p>
+	<p><%= current_user.last_name %></p>
+	<p><%= current_user.email %></p>
+</div>
+<% if current_user.comments.any? %>
+	<h3>My Posts</h3>
+	<% current_user.comments.each do |comment| %>
+	<p><%= comment.topic %> - <%= comment.body %></p>
+<% end %>
+<% else %>
+	<h4>You don't have any comments yet!</h4>
+	<%= link_to "Add new comment", new_comment_path%>
+<% end %>

@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>RailsBlog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style>
+  body{
+  	background-color: #262626;
+  	text-align: center;
+  	/*color: ;*/
+  }
+  button{
+  	color:#2EBD59;
+  }
+  a{
+  	color:#2EBD59;
+  }
+  h1{
+  	color:#2EBD59;
+  }
+  h2{
+  	color: #2EBD59;
+  }
+  h3{
+  	color: #2EBD59;
+  }
+
+
+
+  </style>
 </head>
 <body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
 
-<%= yield %>
+				<%= yield %>
 
+				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+				<!-- Include all compiled plugins (below), or include individual files as needed -->
+				<script src="js/bootstrap.min.js"></script>
+				<!-- Latest compiled and minified JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<div>
+	</div>
+</div>
 </body>
 </html>

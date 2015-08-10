@@ -1,0 +1,9 @@
+<h1><%= @comment.topic %></h1>
+<hr>
+<p><%= @comment.body %></p>
+
+<% if current_user && current_user.comments.include?(@comment) %>
+<p><%= link_to "Edit comment", edit_comment_path(@comment) %></p>
+<p><%= link_to "Delete comment", destroy_comment_path(@comment) %></p>
+<% end %>
+

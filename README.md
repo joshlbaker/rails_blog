@@ -1,6 +1,6 @@
 Weekend Blog Project
 
-1) I started out by making a new rails project in my dev folder
+<strong>1)</strong> I started out by making a new rails project in my dev folder
 [rails new -d postgresql rails_blog]
 
 2) Once my app was started, I made sure all necessary gems were installed.

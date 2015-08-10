@@ -1,11 +1,3 @@
-<style>
-body{
-	background-color:#262626; 
-	color:#2EBD59;
-}
-</style>
-
-
 <h2>Weekend Blog Project<h2>
 
 <strong>1)</strong> I started out by making a new rails project in my dev folder

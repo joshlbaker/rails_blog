@@ -1,9 +1,42 @@
+	<style>
+	.well-md{
+		opacity: 0.6;
+	}
+	.linkView{
+		margin-bottom: 10px;
+		margin-top: -5px;
+	}
+	</style>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="/">RailsBlog</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="/signup">Sign Up</a></li>
+	        <li><a href="/login">Log In</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
 <h1>Comments</h1>
 <hr>
 <% @comments.each do |comment| %>
-<div class="well well-sm"><p><%= comment.topic %> </p></div>
+<div class="well well-sm"><strong><%= comment.topic %> </strong></div>
 <div class="well well-md"><p> <%= comment.body %></p></div>
-	<%= link_to "View", comment_path(comment) %>
+	<div class="linkView"><%= link_to "View", comment_path(comment) %></div>
 <% end %>
 <br>
 <br>
